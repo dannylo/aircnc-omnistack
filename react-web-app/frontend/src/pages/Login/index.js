@@ -17,6 +17,8 @@ export default function Login({ history }) {
     //armazenando o usuário cadastrado no cash do navegador.
     localStorage.setItem('user', _id);
     //propriedade usada para navegação. Neste caso, ele está enviar o usuário para o /dashboard.
+    
+    console.log(_id);
     history.push('/dashboard');
   }
     return (
