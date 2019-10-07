@@ -27,6 +27,8 @@ module.exports = {
             thumbnail: filename,
             technologies: technologies.split(',').map(tech => tech.trim()),
         });
+        
+        console.log(spot._id);
 
         return res.json(spot);
     }
