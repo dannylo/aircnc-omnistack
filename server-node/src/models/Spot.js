@@ -21,7 +21,7 @@ const SpotSchema = new mongoose.Schema({
 //define um atributo virtual para o modelo, criando o campo responsável por direcionar
 //o thumbnail para a pasta de arquivos no servidor.
 SpotSchema.virtual('thumbnail_url').get(function(){
-    return `http://localhost:3333/files/${this.thumbnail}`;
+    return `http://10.107.1.24:3333/files/${this.thumbnail}`;
 });
 
 module.exports = mongoose.model('Spot', SpotSchema);
